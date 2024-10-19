@@ -1,3 +1,4 @@
+import os
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 
@@ -14,5 +15,8 @@ def get_best_audio():
             audio_value = audio_stream.itag
     return audio_value
 
+output_directory = 'audio'
+os.makedirs(output_directory, exist_ok=True)
+
 audio_itag = get_best_audio()
-yt.streams.get_by_itag(audio_itag).download()
+yt.streams.get_by_itag(audio_itag).download(output_path=output_directory)
