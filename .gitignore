@@ -4,6 +4,8 @@ splitted
 text_transcript.txt 
 transcript.txt
 .vscode
+src\tempCodeRunnerFile.py
+text.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
