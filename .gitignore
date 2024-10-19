@@ -3,6 +3,7 @@
 splitted
 text_transcript.txt 
 transcript.txt
+.vscode
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
